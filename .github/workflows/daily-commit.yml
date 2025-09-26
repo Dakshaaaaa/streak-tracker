@@ -22,14 +22,8 @@ jobs:
 
     - name: Commit changes
       run: |
-        # Set the Git user details (Good job including this!)
         git config --global user.name "Dakshaaaaa"
         git config --global user.email "dakshapawar0603@gmail.com"
-        
-        
         git add log.txt
-        
-        git commit -m "Daily commit $(date)" 
-        
-        
+        git commit -m "Daily commit $(date)"
         git push
